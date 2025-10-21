@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/maximerobine/at_commands"
+	"github.com/maximerobine/cellular_cli/internal/gsm_client"
 	"go.bug.st/serial"
 )
 
@@ -92,7 +93,7 @@ func main() {
 		panic(fmt.Errorf("fail to init serial connection: %v", err))
 	}
 
-	g, err := NewGSMClient()
+	g, err := gsm_client.NewGSMClient()
 
 	log.Info("sending Clock")
 	resp, err := sendATCommand(s, at_commands.Clock.Read(), *log)

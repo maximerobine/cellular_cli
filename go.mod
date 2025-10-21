@@ -1,4 +1,4 @@
-module cellular_cli
+module github.com/maximerobine/cellular_cli
 
 go 1.25.3
 
