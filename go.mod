@@ -2,10 +2,7 @@ module github.com/maximerobine/cellular_cli
 
 go 1.25.3
 
-require (
-	github.com/maximerobine/at_commands v0.0.0
-	go.bug.st/serial v1.6.4
-)
+require go.bug.st/serial v1.6.4
 
 require (
 	github.com/creack/goselect v0.1.2 // indirect
